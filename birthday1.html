@@ -1,8 +1,41 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Happy-Birthday-Pink-Color-Desktop-Wallpapers.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .container {
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .next-page {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .next-page:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
 
-<div style="text-align:center"> 
+<div class="container">
   <button onclick="playPause()">Play/Pause</button> 
   <button onclick="makeBig()">Big</button>
   <button onclick="makeSmall()">Small</button>
@@ -13,7 +46,9 @@
     <source src="Birthady poster.mp4" type="video/ogg">
     Your browser does not support HTML video.
   </video>
-</div> 
+  <br><br>
+  <a href="birthday.html" class="next-page">Next Page</a>
+</div>
 
 <script> 
 var myVideo = document.getElementById("video1"); 
@@ -40,6 +75,5 @@ function makeNormal() {
 
 <p>Video courtesy of <a href="https://www.canva.com/design/DAGGyMkz2U4/VRoKrCpdfozmd9bxZ3DtzA/edit" target="_blank">Birthday poster</a>.</p>
 
-</body> 
+</body>
 </html>
-
